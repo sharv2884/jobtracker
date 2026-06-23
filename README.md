@@ -130,6 +130,17 @@ Validation errors include a `fields` object showing which fields failed and why.
 - How Lombok reduces boilerplate with `@Data`, `@RequiredArgsConstructor`, etc.
 - Why DTOs exist and how they decouple the API contract from the database schema
 
+## Concepts Reviewed (Phase 2 Recap)
+
+Before starting Phase 3 (JWT Auth), did a full pass reviewing:
+- Spring Boot auto-configuration, IoC, and dependency injection
+- JPA/Hibernate entity mapping and lifecycle hooks (`@PrePersist`, `@PreUpdate`)
+- Spring Data derived query methods and pagination (`Page`, `Pageable`)
+- Centralized exception handling via `@RestControllerAdvice`
+- DTO pattern and Bean Validation
+- Constructor-based dependency injection in the Service layer
+- `ResponseEntity` and HTTP status code control in Controllers
+
 ## Author
 
 [Sharvani A R](https://github.com/sharv2884)
