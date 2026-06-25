@@ -1,5 +1,5 @@
 package com.sharv.jobtracker.repository;
-
+import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
@@ -16,4 +16,7 @@ public interface JobApplicationRepository extends JpaRepository<JobApplication, 
     Page<JobApplication> findByStatus(ApplicationStatus status, Pageable pageable);
 
     Page<JobApplication> findByCompanyNameContainingIgnoreCase(String companyName, Pageable pageable);
+    Page<JobApplication> findByUserUsername(String username, Pageable pageable);
+    Page<JobApplication> findByUserUsernameAndStatus(String username, ApplicationStatus status, Pageable pageable);
+    Optional<JobApplication> findByIdAndUserUsername(Long id, String username);
 }
