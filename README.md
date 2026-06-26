@@ -19,7 +19,7 @@ A RESTful API built with Java and Spring Boot for tracking job applications. Bui
 |-------|-------------|--------|
 | 1 | Project setup, DB connection | ✅ Done |
 | 2 | Job Application CRUD, exception handling, pagination | ✅ Done |
-| 3 | JWT Authentication (register/login) | 🔄 In progress |
+| 3 | JWT Authentication (register/login) | ✅ Done |
 | 4 | Swagger docs + polish | ⏳ Pending |
 | 5 | Docker + docker-compose | ⏳ Pending |
 | 6 | GitHub + Render deployment | ⏳ Pending |
@@ -48,6 +48,30 @@ All endpoints are prefixed with `/api/applications`.
 | GET | `/api/applications/{id}` | Get a single application by ID |
 | PUT | `/api/applications/{id}` | Update an application |
 | DELETE | `/api/applications/{id}` | Delete an application |
+
+## Authentication
+
+All `/api/applications/**` routes require a valid JWT. Auth routes are public.
+
+| Method | Endpoint | Description |
+|--------|----------|--------------|
+| POST | `/api/auth/register` | Create a new user account, returns a JWT |
+| POST | `/api/auth/login` | Authenticate, returns a JWT |
+
+### Example: Register
+
+```json
+{
+  "username": "sharv",
+  "email": "sharv@test.com",
+  "password": "test123"
+}
+```
+
+### Using the token
+
+Add this header to every request to `/api/applications/**`:
+
 
 ### Query Parameters for GET /api/applications
 
@@ -129,6 +153,11 @@ Validation errors include a `fields` object showing which fields failed and why.
 - How `@RestControllerAdvice` enables centralized exception handling across the app
 - How Lombok reduces boilerplate with `@Data`, `@RequiredArgsConstructor`, etc.
 - Why DTOs exist and how they decouple the API contract from the database schema
+- How JWT tokens are signed and verified using a secret key (HMAC-SHA256)
+- How Spring Security's filter chain works, and how to insert a custom filter into it
+- How `SecurityContextHolder` carries the authenticated user through a request
+- Why password hashing (BCrypt) is one-way, not encryption
+- How to scope database queries per-user to prevent one user from accessing another's data
 
 ## Concepts Reviewed (Phase 2 Recap)
 
