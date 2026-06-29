@@ -20,7 +20,7 @@ A RESTful API built with Java and Spring Boot for tracking job applications. Bui
 | 1 | Project setup, DB connection | ✅ Done |
 | 2 | Job Application CRUD, exception handling, pagination | ✅ Done |
 | 3 | JWT Authentication (register/login) | ✅ Done |
-| 4 | Swagger docs + polish | ⏳ Pending |
+| 4 | Swagger docs + polish | ✅ Done |
 | 5 | Docker + docker-compose | ⏳ Pending |
 | 6 | GitHub + Render deployment | ⏳ Pending |
 
@@ -158,7 +158,8 @@ Validation errors include a `fields` object showing which fields failed and why.
 - How `SecurityContextHolder` carries the authenticated user through a request
 - Why password hashing (BCrypt) is one-way, not encryption
 - How to scope database queries per-user to prevent one user from accessing another's data
-
+- How OpenAPI/Swagger auto-generates interactive API docs from controller annotations
+<!--
 ## Concepts Reviewed (Phase 2 Recap)
 
 Before starting Phase 3 (JWT Auth), did a full pass reviewing:
@@ -169,6 +170,7 @@ Before starting Phase 3 (JWT Auth), did a full pass reviewing:
 - DTO pattern and Bean Validation
 - Constructor-based dependency injection in the Service layer
 - `ResponseEntity` and HTTP status code control in Controllers
+-->
 
 ## Author
 
