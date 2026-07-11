@@ -2,6 +2,12 @@
 
 A RESTful API built with Java and Spring Boot for tracking job applications. Built as a learning project covering Spring Boot, PostgreSQL, JWT authentication, Docker, and cloud deployment.
 
+## Live Demo
+
+Swagger UI: `https://jobtracker-j80q.onrender.com/swagger-ui/index.html`
+
+> Note: hosted on Render free tier — first request after inactivity may take ~30 seconds to wake up.
+
 ## Tech Stack
 
 - **Java 17** — core language
@@ -21,8 +27,8 @@ A RESTful API built with Java and Spring Boot for tracking job applications. Bui
 | 2 | Job Application CRUD, exception handling, pagination | ✅ Done |
 | 3 | JWT Authentication (register/login) | ✅ Done |
 | 4 | Swagger docs + polish | ✅ Done |
-| 5 | Docker + docker-compose | ⏳ Pending |
-| 6 | GitHub + Render deployment | ⏳ Pending |
+| 5 | Docker + docker-compose | ✅ Done |
+| 6 | GitHub + Render deployment | ✅ Done |
 
 ## Project Structure
 
