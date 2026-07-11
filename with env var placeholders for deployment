@@ -1,0 +1,19 @@
+[33m06fd36b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m changes in docker file
+[33md3ea35e[m Phase 5: Docker and Deployment
+[33ma0f2897[m fix: return 409 Conflict instead of 500 for duplicate username/email on register
+[33m2dbd4c8[m docs: mark Phase 4 complete in README
+[33ma984262[m phase 4: complete Swagger/OpenAPI documentation with bearer auth support
+[33m3aba06b[m phase 4: fix springdoc version mismatch (2.6.0 to 2.8.5), swagger UI working
+[33mde8f296[m docs: update README for Phase 3 JWT auth completion
+[33m08ec71e[m phase 3: JWT authentication with per-user data scoping
+[33mda1d5a5[m Added Added Jwt for generating and reading tokens
+[33mceab6f0[m docs: add concept review notes before starting JWT auth
+[33m9ea22fe[m Multi-user JWT Authentication done
+[33m083c901[m Updated how users store Applications and added user Repositories
+[33m33d68e9[m Added User Entity and dependencies
+[33mc7fb19b[m add README with project overview and progress
+[33m36cdaca[m Update gitignore
+[33m5fa5ffc[m Remove application.properties from tracker
+[33m2c939cb[m Stop tracking application properties
+[33m1b44eec[m phase 2: job application CRUD - entity, repository, service, controller, exception handling
+[33mdfdaae4[m initial project setup
