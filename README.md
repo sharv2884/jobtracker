@@ -8,6 +8,16 @@ Swagger UI: `https://jobtracker-j80q.onrender.com/swagger-ui/index.html`
 
 > Note: hosted on Render free tier — first request after inactivity may take ~30 seconds to wake up.
 
+## Frontend
+
+The React frontend for this project is built separately using Vite + Tailwind CSS.
+
+- **Frontend Repository:** [jobtracker-frontend](https://github.com/sharv2884/jobtracker-frontend)
+- **Stack:** React, Vite, Tailwind CSS, Axios, React Router
+
+> Frontend deployment coming soon.
+
+
 ## Tech Stack
 
 - **Java 17** — core language
