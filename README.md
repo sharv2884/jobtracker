@@ -24,10 +24,10 @@ The React frontend for this project is built separately using Vite + Tailwind CS
 - **Spring Boot 3.5** — web framework and auto-configuration
 - **Spring Data JPA + Hibernate** — ORM and database access
 - **PostgreSQL** — relational database (hosted on Neon)
-- **Spring Security + JWT** — authentication and route protection *(in progress)*
-- **Docker** — containerization *(planned)*
-- **Render** — cloud deployment *(planned)*
-- **Swagger / OpenAPI** — API documentation *(planned)*
+- **Spring Security + JWT** — authentication and route protection 
+- **Docker** — containerization 
+- **Render** — cloud deployment 
+- **Swagger / OpenAPI** — API documentation 
 
 ## Project Status
 
