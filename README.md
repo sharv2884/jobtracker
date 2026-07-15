@@ -105,8 +105,8 @@ Add this header to every request to `/api/applications/**`:
 {
   "companyName": "Google",
   "jobTitle": "Backend Engineer",
-  "status": "APPLIED",
-  "appliedDate": "2026-06-11",
+  "status": "OFFER",
+  "appliedDate": "2026-07-15",
   "notes": "Applied via referral"
 }
 ```
